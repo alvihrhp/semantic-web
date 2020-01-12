@@ -1,0 +1,68 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#banner-home {
+    height: 63vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../img/bmw-m4.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    transition: transform .2s;
+}
+
+.banner-text-container {
+    width: 50%;
+    position: absolute;
+    bottom: 35%;
+    left: 5%;
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 5px;
+    padding: 5px;
+}
+
+.column-left {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../img/column-left-bg.jpg') no-repeat center;
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 75vh;
+    padding: 50px;
+    color: white;
+    position: relative;
+}
+
+.column-left h1 {
+    position: absolute;
+    bottom: 11%;
+}
+
+.column-right {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../img/column-right-bg.jpg') no-repeat center;
+    background-size: cover;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 50px;
+    color: white;
+    position: relative;
+}
+
+.column-right h1 {
+    position: absolute;
+    top: 18%;
+    left: 31.2%;
+    text-align: center;
+}
